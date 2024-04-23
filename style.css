@@ -4,6 +4,15 @@ body {
   background-size: 216px 216px;
   margin: 0px 0px 0px;
 }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  height: max-content;
+  margin: 0 auto;
+}
+
 .main-screen {
   background: url(images/kv_100mm.jpg);
   background-size: 1920px 800px;
@@ -501,7 +510,6 @@ a:hover {
   height: 552px;
   left: 312px;
   top: 335px;
-  
 }
 
 .icon-heading {
@@ -553,7 +561,6 @@ a:hover {
   height: 273px;
   left: 0px;
   top: 150px;
-  
 }
 
 .texts3 {
@@ -638,7 +645,7 @@ a:hover {
   height: 80px;
   left: 0%;
   top: 7%;
-  
+
   display: flex;
 
   align-items: center;
@@ -709,7 +716,6 @@ a:hover {
   height: 549px;
   left: 312px;
   top: 600px;
-  
 }
 
 .text4 {
@@ -793,8 +799,6 @@ a:hover {
   height: 456px;
   left: 293px;
   top: 850px;
-
-  
 }
 
 .text5 {
@@ -810,7 +814,7 @@ a:hover {
   font-size: 48px;
   line-height: 140%;
   /* or 67px */
-  
+
   color: #ffffff;
 }
 
@@ -849,7 +853,6 @@ a:hover {
   height: 1071.65px;
   left: 593px;
   top: 1100px;
-  
 }
 
 .icon-heading3 {
@@ -987,13 +990,6 @@ a:hover {
   margin-left: 315px;
   /*left: 315px;*/
   top: 1350px;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  width: max-content;
-  margin: 0 auto;
 }
 
 .text7 {
@@ -1139,7 +1135,7 @@ footer {
   width: 547px;
   height: 343px;
   left: 686px;
-  top: 6150px;
+  top: 6310px;
 }
 
 .text8 {
@@ -1180,9 +1176,17 @@ footer {
   width: 353px;
   height: 44px;
 
-  background: #ffffff;
-  opacity: 0.25;
+  color: white;
+  font-size: 14px;
+
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 80%;
   border-radius: 50px 0px 0px 50px;
+}
+
+.form::placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 100%;
 }
 
 .subscribe {
@@ -1194,10 +1198,10 @@ footer {
   gap: 10px;
 
   position: relative;
-  top: -45px;
+  top: -47.2px;
   right: -340px;
   width: 160px;
-  height: 44px;
+  height: 47.2px;
 
   font-family: "Roboto", sans-serif;
   font-size: 16px;
