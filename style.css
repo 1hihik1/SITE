@@ -1,4 +1,5 @@
 body {
+  overflow-x: hidden;
   color: white;
   background: url(images/bg.png);
   background-size: 216px 216px;
@@ -6,6 +7,9 @@ body {
 }
 
 .wrapper {
+  position: absolute;
+  left: -17px;
+
   display: flex;
   flex-direction: column;
   width: max-content;
@@ -83,7 +87,6 @@ a:hover {
   line-height: 140%;
   /* or 90px */
 
-  /* white */
   color: #ffffff;
 }
 
@@ -98,7 +101,7 @@ a:hover {
   position: relative;
   width: 183px;
   height: 44px;
-  left: 1657px;
+  left: 1695px;
   top: 10px;
   border: none;
 
@@ -112,15 +115,12 @@ a:hover {
   /* identical to box height, or 24px */
   text-align: center;
 
-  /* white */
   color: #ffffff;
 
-  /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
 
-  /* grad2 */
   background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
   border-radius: 50px;
 }
@@ -151,10 +151,8 @@ a:hover {
   line-height: 140%;
   /* or 50px */
 
-  /* white */
   color: #ffffff;
 
-  /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -992,6 +990,13 @@ a:hover {
   top: 1350px;
 }
 
+.teachers__teacher {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .text7 {
   position: relative;
   width: 481px;
@@ -1018,7 +1023,7 @@ a:hover {
 .teachers2 {
   position: relative;
   top: 130px;
-  left: 105px;
+  left: 0px;
   width: 1348px;
   height: 375px;
   display: flex;
@@ -1079,7 +1084,7 @@ a:hover {
   position: relative;
   width: 358px;
   height: 26px;
-  left: -208px;
+  left: 0px;
   top: 75px;
 
   font-family: "Roboto", sans-serif;
@@ -1107,7 +1112,7 @@ a:hover {
   position: relative;
   width: 143px;
   height: 44px;
-  left: 25px;
+  left: 0px;
   top: 110px;
 
   font-family: "Roboto", sans-serif;
@@ -1294,7 +1299,90 @@ footer {
   transition: 0.5s;
 }
 
-@media screen and() {
+@media screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 700px) {
+  .wrapper {
+    position: absolute;
+    left: -200px;
+
+    display: flex;
+    flex-direction: column;
+    width: 1720px;
+    height: max-content;
+    margin: 0 auto;
+  }
+
+  .main-screen {
+    background: url(images/kv_100mm.jpg);
+    background-size: 1720px 800px;
+    background-repeat: no-repeat;
+    width: 1720px;
+    height: 960px;
+    gap: 0px;
+    opacity: 100%;
+  }
+
+  .logo {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 40px;
+    left: 312px;
+  }
+
+  .main-screen__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 10px;
+
+    position: relative;
+    width: 183px;
+    height: 44px;
+    left: 1520px;
+    top: 10px;
+    border: none;
+  }
+
+  .main-screen__last-line {
+    position: relative;
+    width: 1720px;
+    height: 130px;
+    left: 0px;
+    top: 440px;
+    background: #121212;
+  }
+
+  .program__weeks2 {
+    position: relative;
+    top: -1020px;
+    left: 58%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: left;
+    height: 410px;
+    width: 600px;
+
+    color: #ffffff;
+  }
+
+  .teachers2 {
+    position: relative;
+    top: 130px;
+    left: 0px;
+    width: 1348px;
+    height: 375px;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 nav {
   z-index: 3;
