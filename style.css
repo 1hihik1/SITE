@@ -435,7 +435,6 @@ a:hover {
   height: 542px;
   left: 312px;
   top: 160px;
-  border: 1px solid white;
 }
 
 .about_rect {
@@ -502,7 +501,7 @@ a:hover {
   height: 552px;
   left: 312px;
   top: 335px;
-  border: 1px solid white;
+  
 }
 
 .icon-heading {
@@ -554,7 +553,7 @@ a:hover {
   height: 273px;
   left: 0px;
   top: 150px;
-  border: 1px solid white;
+  
 }
 
 .texts3 {
@@ -639,7 +638,7 @@ a:hover {
   height: 80px;
   left: 0%;
   top: 7%;
-  border: 1px solid white;
+  
   display: flex;
 
   align-items: center;
@@ -710,7 +709,7 @@ a:hover {
   height: 549px;
   left: 312px;
   top: 600px;
-  border: 1px solid white;
+  
 }
 
 .text4 {
@@ -796,7 +795,7 @@ a:hover {
   left: 293px;
   top: 850px;
 
-  border: 1px solid white;
+  
 }
 
 .text5 {
@@ -852,7 +851,7 @@ a:hover {
   height: 1071.65px;
   left: 593px;
   top: 1100px;
-  border: 1px solid white;
+  
 }
 
 .icon-heading3 {
