@@ -1337,10 +1337,12 @@ footer {
     padding: 10px 30px;
     gap: 10px;
 
+    font-size: 22px;
+
     position: relative;
-    width: 183px;
+    width: 228px;
     height: 44px;
-    left: 1520px;
+    left: 1450px;
     top: 10px;
     border: none;
   }
@@ -1384,22 +1386,181 @@ footer {
     justify-content: space-around;
   }
 
-  @media screen and (orientation: portrait) and (max-device-width: 360px) {
-    .main-screen__button {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      padding: 10px 30px;
-      gap: 10px;
+  .main-menu {
+    font-family: "Roboto", sans-serif;
+    font-size: calc(16px + 8px);
+    display: flex;
+    position: relative;
+    width: 965px;
+    height: 24px;
+    top: 48px;
+    left: 412px;
+    justify-content: space-between;
+  }
 
-      position: relative;
-      width: 183px;
-      height: 44px;
-      left: 1440px;
-      top: 10px;
-      border: none;
-    }
+  .text2-2 {
+    position: relative;
+    width: 636px;
+    height: 156px;
+    left: 50%;
+    top: 15%;
+
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(16px + 8px);
+    line-height: 160%;
+    /* or 26px */
+
+    color: #ffffff;
+  }
+
+  .text2 {
+    position: relative;
+    width: 502px;
+    height: 67px;
+    left: 50%;
+    top: 5%;
+
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%;
+    /* or 67px */
+
+    color: #ffffff;
+  }
+
+  .text3-1 {
+    position: relative;
+    width: 800px;
+    height: 52px;
+    left: 0px;
+    top: 40px;
+
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(16px + 8px);
+    line-height: 160%;
+    /* or 26px */
+
+    color: #ffffff;
+    opacity: 0.5;
+  }
+
+  .text3-6 {
+    font-size: calc(14px + 8px);
+    width: 324px;
+    height: 88px;
+  }
+
+  .text4-4 {
+    font-size: calc(16px + 8px);
+    width: 358px;
+  }
+
+  .text6-2 {
+    position: relative;
+    width: 411px;
+    height: 52px;
+    left: 22.5%;
+    top: 4.5vw;
+
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(16px + 8px);
+    line-height: 160%;
+    text-align: center;
+
+    color: #ffffff;
+    opacity: 0.5;
+  }
+
+  .timeline {
+    position: relative;
+    width: 6px;
+    height: 677px;
+    left: 50%;
+    top: 15.5vw;
+
+    background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+  }
+
+  .program__weeks1 {
+    position: relative;
+    top: -500px;
+    left: 11%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: right;
+    height: 600px;
+
+    color: #ffffff;
+  }
+
+  .week {
+    position: relative;
+    top: -15px;
+    opacity: 0.5;
+    font-size: calc(14px + 8px);
+  }
+
+  .teachers {
+    position: relative;
+    width: 1319.08px;
+    height: 618.8px;
+    margin-left: 315px;
+    /*left: 315px;*/
+    top: 1360px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    width: 547px;
+    height: 443px;
+    left: 686px;
+    top: 6320px;
+  }
+
+  .text7-3 {
+    font-size: calc(16px + 8px);
+    line-height: 160%;
+    text-align: center;
+  }
+
+  .button2 {
+    font-family: "Roboto", sans-serif;
+    font-size: calc(16px + 8px);
+  }
+
+  .text8-2 {
+    width: 411px;
+    height: 52px;
+
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(16px + 8px);
+    line-height: 160%;
+    text-align: center;
+
+    color: #ffffff;
+    opacity: 0.5;
   }
 
   @media screen and (orientation: portrait) and (max-device-width: 375px) {
@@ -1412,12 +1573,30 @@ footer {
       gap: 10px;
 
       position: relative;
-      width: 183px;
+      width: 228px;
       height: 44px;
-      left: 1440px;
+      left: 1450px;
       top: 10px;
       border: none;
     }
+  }
+}
+
+@media screen and (orientation: portrait) and (max-device-width: 360px) {
+  .main-screen__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 10px;
+
+    position: relative;
+    width: 228px;
+    height: 44px;
+    left: 1405px;
+    top: 10px;
+    border: none;
   }
 }
 
