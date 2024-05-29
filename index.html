@@ -12,10 +12,94 @@
   </head>
   <body>
     <div class="wrapper">
+      <div id="loader"></div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const loader = document.getElementById("loader");
+          loader.innerHTML = '<div class="loader-circle"></div>';
+
+          // Задержка в 1 секунду перед скрытием анимации
+          setTimeout(function () {
+            loader.style.display = "none";
+          }, 1000);
+        });
+      </script>
+
       <div class="main-screen">
         <div class="logo">
           <img src="images/Logo.svg" class="logo1" />
           <img src="images/Logo2.svg" class="logo2" />
+        </div>
+        <div class="Theme">
+          <button class="theme-button" onclick="changeTheme()">Тема</button>
+          <script>
+            let currentTheme = "dark";
+            //const wrapper = document.querySelector(".wrapper");
+
+            function changeTheme() {
+              const body = document.querySelector("body");
+              const mainbg = document.querySelector(".main-screen");
+              const num1 = document.querySelector(".number1");
+              const num2 = document.querySelector(".number2");
+              const num3 = document.querySelector(".number3");
+              const num4 = document.querySelector(".number4");
+              const themeButton = document.querySelector(".theme-button");
+              const main_screen__people1 = document.querySelectorAll(
+                ".main-screen__people1"
+              );
+
+              const divs = document.querySelectorAll("div");
+              for (let i = 0; i < divs.length; i++) {
+                if (currentTheme === "light") {
+                  divs[i].style.color = "white";
+                } else {
+                  divs[i].style.color = "black";
+                }
+              }
+
+              const spans = document.querySelectorAll("span");
+              for (let i = 0; i < spans.length; i++) {
+                if (currentTheme === "light") {
+                  spans[i].style.color = "white";
+                } else {
+                  spans[i].style.color = "black";
+                }
+              }
+
+              const menus = document.querySelectorAll("a");
+              for (let i = 0; i < menus.length; i++) {
+                if (currentTheme === "light") {
+                  menus[i].style.color = "white";
+                } else {
+                  menus[i].style.color = "black";
+                }
+              }
+
+              if (currentTheme === "light") {
+                body.style.backgroundImage = "url(bg.png)";
+                mainbg.style.backgroundImage = "url(images/kv_100mm.jpg)";
+                body.style.color = "white";
+                num1.style.background = "#121212";
+                num2.style.background = "#121212";
+                num3.style.background = "#121212";
+                num4.style.background = "#121212";
+                themeButton.textContent = "Светлая тема";
+                currentTheme = "dark";
+              } else {
+                body.style.backgroundImage = "url(bg2.png)";
+                mainbg.style.backgroundImage = "url(images/kv_100mm2.png)";
+                num1.style.background = "white";
+                num2.style.background = "white";
+                num3.style.background = "white";
+                num4.style.background = "white";
+                //main_screen__people1.style.color = "white";
+                body.style.color = "black";
+
+                themeButton.textContent = "Тёмная тема";
+                currentTheme = "light";
+              }
+            }
+          </script>
         </div>
         <nav class="main-menu">
           <div><a href="">Главная</a></div>
@@ -25,7 +109,14 @@
           <div><a href="">Рассылка</a></div>
           <div><a href="">Контакты</a></div>
         </nav>
-        <a href="practicJS.html"><button class="main-screen__button">Зайти в кабинет</button></a>
+
+        <button
+          class="main-screen__button"
+          onclick="window.location.href = 'practicJS.html';"
+        >
+          Зайти в кабинет
+        </button>
+
         <div class="text1">Первый курс <br />по компьютерной сборке</div>
 
         <div class="numbers">
@@ -287,7 +378,7 @@
           <div class="instagram"><img src="images/instagram.svg" /></div>
         </div>
       </footer>
-      <div style="height: 30px; position: relative; top: 1980px"></div>
+      <div style="height: 30px; position: relative; top: 2080px"></div>
     </div>
   </body>
 </html>
